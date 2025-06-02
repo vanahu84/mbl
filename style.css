@@ -1,0 +1,385 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #1F2937; /* Charcoal Gray */
+    background-color: #F9FAFB; /* Light Gray */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #111827; /* Navy Gray */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* Sticky Navigation Styling */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #111827; /* Navy Gray */
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.sticky-nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.sticky-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.sticky-nav ul li {
+    margin-left: 20px;
+}
+
+.sticky-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.sticky-nav ul li a:hover {
+    color: #0077CC; /* Primary Blue */
+}
+
+/* Hero Section Styling */
+.hero-section {
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #F9FAFB; /* Light Gray */
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* text-4xl to text-5xl */
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem; /* text-base */
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-ctas .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button.primary {
+    background-color: #0077CC; /* Primary Blue */
+    color: white;
+}
+
+.cta-button.primary:hover {
+    background-color: #005fa3;
+}
+
+.cta-button.secondary {
+    background-color: #22C55E; /* Accent Green */
+    color: white;
+}
+
+.cta-button.secondary:hover {
+    background-color: #1a9e4b;
+}
+
+/* About Us Section Styling */
+.about-section h2,
+.products-section h2,
+.why-choose-us-section h2,
+.testimonials-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem; /* Section Titles */
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Products Section Styling */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.product-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.product-item .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.product-note {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Why Choose Us Section Styling */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.benefit-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.benefit-item .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #0077CC; /* Primary Blue */
+}
+
+.benefit-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.benefit-item p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Testimonials Section Styling */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.testimonial-item .quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.testimonial-item .author {
+    font-weight: 600;
+    text-align: right;
+    color: #0077CC; /* Primary Blue */
+}
+
+/* Contact Section Styling */
+.contact-info p {
+    font-size: 1rem;
+}
+
+/* Footer Styling */
+.container {
+    padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-ctas .cta-button {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .sticky-nav .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sticky-nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sticky-nav ul li {
+        margin: 5px 10px;
+    }
+
+    /* Adjust section padding for smaller screens */
+    section {
+        padding: 40px 0;
+    }
+
+    /* Product Grid */
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Benefits Grid */
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Testimonial Grid */
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* General text adjustments */
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-ctas .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .site-title {
+        font-size: 1.2rem;
+    }
+
+    .sticky-nav ul li {
+        margin: 5px 5px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-item, .benefit-item, .testimonial-item {
+        padding: 20px;
+    }
+
+    .product-item .icon, .benefit-item .icon {
+        font-size: 2.5rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+}
