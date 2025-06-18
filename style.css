@@ -383,16 +383,29 @@ section {
         font-size: 1rem;
     }
 }
-<div id="iframe-bubble">
-  <iframe src="https://vah6002-ai-agent-mcp.hf.space"></iframe>
-</div>
+#iframe-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 9999;
+    transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease;
+}
 
-<script>
-  const bubble = document.getElementById('iframe-bubble');
-  let isExpanded = false;
+#iframe-bubble iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 
-  bubble.addEventListener('click', () => {
-    isExpanded = !isExpanded;
-    bubble.classList.toggle('expanded', isExpanded);
-  });
-</script>
+#iframe-bubble.expanded {
+    width: 850px;
+    height: 450px;
+    border-radius: 16px;
+}
+
