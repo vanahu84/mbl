@@ -147,6 +147,21 @@
     </footer>
 
     <script src="script.js"></script>
+	
+<div id="iframe-bubble">
+  <iframe src="https://vah6002-ai-agent-mcp.hf.space"></iframe>
+</div>
+
+<script>
+  const bubble = document.getElementById('iframe-bubble');
+  let isExpanded = false;
+
+  bubble.addEventListener('click', () => {
+    isExpanded = !isExpanded;
+    bubble.classList.toggle('expanded', isExpanded);
+  });
+</script>
+	
 </body>
 
     
