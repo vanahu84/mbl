@@ -440,7 +440,7 @@ section {
 }
 
 #iframe-bubble.expanded {
-  width: 450px;
+  width: 200px;
   height: 550px;
   border-radius: 20px;
 }
