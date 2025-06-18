@@ -132,13 +132,7 @@
                 </div>
             </div>
         </div>
-	<iframe
-	src="https://vah6002-ai-agent-mcp.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-	></iframe>    
-    </section>
+	
 
     <!-- Other sections will be added here -->
 
@@ -148,15 +142,20 @@
 
     <script src="script.js"></script>
 
-	<script>
-	  const bubble = document.getElementById('iframe-bubble');
-	  let isExpanded = false;
-	
-	  bubble.addEventListener('click', () => {
-	    isExpanded = !isExpanded;
-	    bubble.classList.toggle('expanded', isExpanded);
-	  });
-	</script>
+	<div id="iframe-bubble">
+  <iframe src="https://vah6002-ai-agent-mcp.hf.space"></iframe>
+</div>
+
+<script>
+  const bubble = document.getElementById('iframe-bubble');
+  let isExpanded = false;
+
+  bubble.addEventListener('click', () => {
+    isExpanded = !isExpanded;
+    bubble.classList.toggle('expanded', isExpanded);
+  });
+</script>
+
 	
 	
 
