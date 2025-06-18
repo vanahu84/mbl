@@ -143,6 +143,7 @@
     <script src="script.js"></script>
 
 <div id="iframe-bubble">
+  <button id="close-bubble">❌</button>
   <div class="iframe-cover"></div>
   <iframe src="https://vah6002-ai-agent-mcp.hf.space"></iframe>
 </div>
@@ -150,15 +151,24 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const bubble = document.getElementById('iframe-bubble');
-    const cover = document.querySelector('#iframe-bubble .iframe-cover');
+    const cover = bubble.querySelector('.iframe-cover');
+    const closeBtn = document.getElementById('close-bubble');
 
-    // Clicking the cover will toggle expand
+    // Open on click (small bubble)
     cover.addEventListener('click', () => {
-      bubble.classList.toggle('expanded');
-      cover.style.display = bubble.classList.contains('expanded') ? 'none' : 'block';
+      bubble.classList.add('expanded');
+      cover.style.display = 'none';
+    });
+
+    // Close on ❌
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      bubble.classList.remove('expanded');
+      cover.style.display = 'block';
     });
   });
 </script>
+
 
 
 
